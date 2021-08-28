@@ -5,7 +5,7 @@ The competition was conducted by  ****"Mayo Collage Girls School"****. <br>
 It was a  ****national level competition**** ; schools and collages participated from all over India. <br>
 I gave the competition on the behalf of ****"Delhi Public School, Rewari"****. <br>
 We got  ****1.5 days i.e. 36 hours**** , to complete and submit the site, with a video of explaining the site. <br>
-We achieved the ****1st position**** in the competition, and this is the site which got the 1st rank.
+We achieved the ****1st position**** in the competition.
 <br><br>
 
 // About the site <br><br>
