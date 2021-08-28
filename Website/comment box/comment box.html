@@ -1,0 +1,84 @@
+<html>
+    <head>
+      <title>FeedBack</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="./style.css">
+          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <div class="head">
+        <div class="header">
+          <div class="logo">
+                <a href="../index.html"><img src="../Images/logo.png" alt="" /></a>
+          </div>
+          <ul class="list">
+            <li class="home">
+                <a id="aHome" href="../index.html">Home</a>
+            </li>
+            <li class="feedback">
+              <a href="./comment box/comment box.html">Feedback</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+ <!-- cmt area -->
+        <div>
+            <form class="form ">
+        <lable class="name">Name: </lable>
+        <input type="text" required id="name"><br><br>
+        <lable class="date">Date: </lable>
+        <input type="date" required id="date"><br><br>
+        <lable class="body">Comment: </lable>
+        <textarea rows="5" required col="30" id="bodyText"></textarea><br><br>
+        <input type="button" required id="addComent" value="Add Comment">
+    </form>
+    </div>
+    <br>
+    <div id="cmt">
+
+    </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+        
+        <script>
+            function render(data){
+                var html = "<div class='leftpannel'><img src='../Images/huka.png'></div><div class='rightpannel'><SPan>"+data.name+"</SPan><div>"+data.date+"</div><p>"+data.body+"</p><br></div>";
+            $('#cmt').append(html);
+            }
+        
+            
+            $(document).ready(function(){
+
+                var coment = [];
+
+                      if (!localStorage.comentData){
+                          localStorage.comentData = [];
+                      }else{
+                          coment = JSON.parse(localStorage.comentData);
+                      }
+
+        for(var i=0;i<coment.length;i++){
+            render(coment[i]);
+        }
+        
+      $('#addComent').click(function(){
+        var addObj = { 
+          "name": $('#name').val(),
+          "date": $('#date').val(),
+          "body": $('#bodyText').val()
+        };
+        coment.push(addObj);
+        localStorage.comentData = JSON.stringify(coment);
+        render(addObj);
+        $('#name').val('');
+        $('#date').val('dd/mm/yyyy');
+        $('#bodyText').val('');
+      });  
+    });    
+        
+        </script>
+
+    </body>
+</html>

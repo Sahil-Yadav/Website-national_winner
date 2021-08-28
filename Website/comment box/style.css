@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", serif;
+  width: 100%;
+  background-image: url(../Images/background\ image.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin: auto auto;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 11vh;
+}
+
+/* cmt */
+.cmt {
+  border: 2px solid black;
+  width: 60%;
+  padding-left: 40%;
+  height: 10%;
+  background-color: white;
+}
+
+/* left pannel */
+.leftpannel {
+  float: left;
+  width: 10%;
+  height: 10%;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+/* right pannel */
+.rightpannel {
+  float: right;
+  width: 90%;
+  height: 10%;
+  font-size: 60%;
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+img {
+  border-radius: 50%;
+  width: 30%;
+  padding-top: 0;
+}
+
+.name,
+.date,
+.body {
+  font-size: 23px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#name,
+#date,
+#bodyText {
+  border: 1.5px solid rgb(0, 0, 0);
+  color: black;
+  padding: 5px 10px;
+}
+
+#bodyText {
+  resize: vertical;
+}
+
+#addComent {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  border: 1.5px solid black;
+  color: rgb(255, 87, 115);
+  transition: 0.3s;
+}
+
+#addComent:hover {
+  background: rgb(255, 87, 115);
+  color: white;
+  transition: 0.3s;
+}
+
+.head {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgb(0, 0, 28);
+}
+
+.head .header {
+  width: 100%;
+  color: white;
+  padding: 5px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.head .header .logo img {
+  cursor: pointer;
+  width: 4%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+}
+
+.head .header .list {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: "Barlow", serif;
+}
+
+.head .header .list li {
+  font-size: 20px;
+  font-weight: 450;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.head .header .list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.head .header .list li a:hover {
+  -webkit-text-decoration: underline 2px;
+  text-decoration: underline 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #f17388;
+}
+
+@media screen and (max-width: 730px) {
+  .form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .head .header .list {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 675px) {
+  .head .header .list {
+    width: 170%;
+  }
+}
+@media screen and (max-width: 585px) {
+  .head .header .list {
+    width: 250%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .head .header .list {
+    width: 400%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .head .header .logo img {
+    width: 7%;
+  }
+}
+@media screen and (max-width: 690px) {
+  .head .header .logo img {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .head .header .logo img {
+    width: 15%;
+  }
+}
