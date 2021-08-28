@@ -16,3 +16,4 @@ No external frameworks for 'Javascript'. <br>
 No copywrited images used. <br>
 There is a feedback page too. (it uses the broweser storage. The feedback is only for us, not visible to anyone) <br>
 
+<h3>he site link is provided in the about section</h3>
